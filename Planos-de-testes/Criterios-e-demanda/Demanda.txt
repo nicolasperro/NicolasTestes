@@ -1,0 +1,167 @@
+Titulo da US:03. Como usuário Domínio Escritório/Empresa, eu gostaria de emitir boleto de cobrança no Internet Banking
+
+Descrição da US:
+
+**Como** cliente PJ do Internet Banking,  
+
+**Quero** acessar o menu "A receber" e clicar em "Depósito por boleto",  
+
+**Para** iniciar o processo de geração de um boleto personalizado para cobrança.  
+
+**DEFINIÇÃO DE PRODUTO**
+
+1.  Acessar o Internet banking
+2.  Acessar a área "Conta PJ";
+3.  Acessar o menu "A receber";
+4.  Clicar na opção "Gerar Cobrança";
+5.  O usuário deve ser direcionado para uma tela com três menus, sendo eles:
+
+*   **Menu "Informações"**
+
+*   **Titulo:** Complete as informações sobre a cobrança
+*   **Campo "Valor":** Formato R$00,00
+
+*   Abaixo desse campo deve conter a informação: Digite um valor a partir de 5,00
+
+*   **Campo "Data de vencimento":** possui o ícone de calendário, permitindo selecionar a data de vencimento.
+
+*   Campo deve permitir digitar a data em formado DD/MM/AAAA
+
+*   **Campo "Juros mensais (%)":** Campo numérico
+*   **Campo "multa por atraso (%)":** Campo numérico
+*   Fleg com as seguintes informações:
+
+*   **Titulo:** Aplicar desconto
+*   **Mensagem:** Habilite esta opção para oferecer um desconto ao pagador caso o boleto seja pago antes da data de vencimento.  
+      
+    ![Image](https://dev.azure.com/tr-ggo/b8e01da0-1652-48de-8e7e-be790f2d5c13/_apis/wit/attachments/ef668b4f-e506-4e67-9efd-a8fd3c30dc85?fileName=image.png)
+*   Selecionando a fleg de desconto deverá habilitar novos campos:
+
+*   **Titulo:** Escolha o tipo de desconto que deseja oferecer
+
+*   **Opções:**
+
+*   **Percentual:** Quando selecionado desconto Percentual, deverá habilitar os campos conforme imagem abaixo:  
+      
+    ![Image](https://dev.azure.com/tr-ggo/b8e01da0-1652-48de-8e7e-be790f2d5c13/_apis/wit/attachments/805426b1-d070-435b-8309-5ac5d6708ed9?fileName=image.png)  
+      
+    
+*   **Campo "Desconto (%)":** Permite valores numericos 
+*   **Campo "Data limite para desconto":** 
+    *   possui o ícone de calendário, permitindo selecionar a data de vencimento.
+
+*   Campo deve permitir digitar a data em formado DD/MM/AAAA
+
+*   **Quando selecionado a opção "Valor"**, deverá habilitar os campos conforme imagem abaixo:  
+      
+    ![Image](https://dev.azure.com/tr-ggo/b8e01da0-1652-48de-8e7e-be790f2d5c13/_apis/wit/attachments/f0f8353a-d4c4-4c5d-8a83-7920de888bee?fileName=image.png)  
+      
+    
+
+*   **Campo "Valor do desconto":** Aceita valor em reais
+*   **Campo "Data limite para desconto":** 
+    *   possui o ícone de calendário, permitindo selecionar a data de vencimento.
+
+*   Campo deve permitir digitar a data em formado DD/MM/AAAA
+
+*   **Botão "Voltar":** Retorna para a home do menu "A receber";
+*   **Botão "Avançar":** Direciona ao próximo menu;
+
+*   Após o direcionamento o menu "Informações" passa a ficar verde e com ícone de confirmado;  
+    
+
+*   **Menu "Pagador"**
+
+*   **Primeiro quadro:**
+
+*   **Titulo:** Complete as informações sobre o pagador
+*   **Campo "Nome do pagador":**  Campos para informar o nome do pagador;
+*   **Campo CPF/CNPJ:** Campo Numérico, deve aceitar 11 ou 14 digitos;
+
+*   Quando for 11, se trata de CPF
+*   Quando for 14, se trata de CNPJ
+
+*   **Segundo quadro:**
+
+*   **Titulo:** Complete as informações sobre o endereço do pagador
+*   Campo "CEP":
+*   Campo "Logradouro";
+*   Campo "Numero";
+*   Campo "Complemento";
+*   Opção "Sem numero"
+*   Campo "Bairro";
+*   Campo "Descrição da cobrança
+*   **Todos esses campos devem seguir as regras de mercado existentes.  
+      
+    ![Image](https://dev.azure.com/tr-ggo/b8e01da0-1652-48de-8e7e-be790f2d5c13/_apis/wit/attachments/72f8c62a-aeb3-40c7-a625-4b7af79f2f95?fileName=image.png)  
+      
+    **
+
+*   **Botão "Voltar":** Retorna para a home do menu "Informações";
+*   **Botão "Avançar":** Direciona ao próximo menu;
+
+*   Após o direcionamento o menu "Pagador" passa a ficar verde e com ícone de confirmado;
+
+*   **Menu "Boleto gerado":**
+
+*   **Titulo:** O boleto da cobrança foi gerado, envie o código de barras, url ou QR code para o pagador
+*   Nome do pagador;
+*   CPF/CNPJ do pagador;
+*   Valor;
+*   Vencimento
+
+*   **Campo "Código de barras":** possuindo o ícone de copiar o que esta no campo;
+*   **Quadro com o QR para pagamento via PIX;**
+*   **Botão "Baixar boleto":** clicando nessa opção o PDF é aberto em tela:  
+      
+    ![Image](https://dev.azure.com/tr-ggo/b8e01da0-1652-48de-8e7e-be790f2d5c13/_apis/wit/attachments/5b6f6d51-2e60-4760-9b70-3b190b30c1cf?fileName=image.png)
+*   Possuindo a opção **"Baixar boleto"** no canto superior da tela.
+
+
+
+
+**Critérios de Aceite**
+
+1.  **Acesso ao fluxo**
+
+*   O cliente PJ deve conseguir acessar o menu “A receber” e clicar em “Depósito por boleto” na área “Conta PJ” do Internet Banking.
+
+3.  **Tela “Informações”**
+
+*   Exibe o título e os campos: Valor (R$00,00, mínimo R$5,00), Data de vencimento (com calendário e entrada DD/MM/AAAA), Juros mensais (%) e Multa por atraso (%).
+*   Checkbox “Aplicar desconto” exibe campos adicionais ao ser selecionado:
+
+*   Opção de desconto “Percentual”: habilita campos de Desconto (%) e Data limite para desconto (com calendário e entrada DD/MM/AAAA).
+*   Opção de desconto “Valor”: habilita campos de Valor do desconto (R$) e Data limite para desconto (com calendário e entrada DD/MM/AAAA).
+
+*   Botão “Voltar” retorna à home do menu “A receber”.
+
+*   Botão “Avançar” direciona ao próximo menu e marca o menu “Informações” como confirmado (verde com ícone).
+
+8.  **Tela “Pagador”**
+
+*   Quadro 1: campos para Nome do pagador e CPF/CNPJ (aceita 11 ou 14 dígitos; identifica CPF ou CNPJ).
+*   Quadro 2: campos para endereço (CEP, Logradouro, Número/sem número, Complemento, Bairro) e Descrição da cobrança.
+*   Campos seguem as regras de validação de mercado.
+*   Botão “Voltar” retorna ao menu “Informações”.
+
+*   Botão “Avançar” direciona ao próximo menu e marca “Pagador” como confirmado (verde com ícone).
+
+11.  **Tela “Boleto gerado”**
+
+*   Exibe os dados: Nome do pagador, CPF/CNPJ, Valor, Vencimento.
+*   Campo “Código de barras” com opção de copiar.
+*   Exibe QR code para pagamento via PIX.
+
+*   Botão “Baixar boleto” abre o PDF do boleto na tela, com opção de download disponível.
+
+14.  **Geral**
+
+*   Navegação entre menus deve ser funcional conforme descrito.
+*   Todas as validações e formatações de campos devem estar de acordo com as regras do produto e mercado.
+
+*   Fluxo deve ser acessível apenas para clientes PJ autenticados.
+
+17.  **Observação:** 
+
+*   Todos os campos e botões devem estar corretamente identificados, funcionais e alinhados ao layout especificado.

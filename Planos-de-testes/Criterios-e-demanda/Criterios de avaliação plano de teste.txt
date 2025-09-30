@@ -1,0 +1,88 @@
+
+**Instruções de Avaliação:**
+
+1.  **Regras de Reprovação Automática:** O conjunto (User Story + Plano de Testes) será reprovado automaticamente nas seguintes condições:
+    *   A User Story ou o Plano de Testes não for(em) fornecido(s), estiver(em) vazio(s) ou não tiver(em) conteúdo substancial.
+    *   A "DIMENSÃO 1: QUALIDADE DA USER STORY (US)" obtiver um score total menor que 0.
+    *   A "DIMENSÃO 2: ESTRATÉGIA E COBERTURA DE TESTES" obtiver um score total menor que 0.
+    *   A "DIMENSÃO 3: TESTES DE REGRESSÃO E NÃO FUNCIONAIS" obtiver um score total menor que 0.
+
+2.  **Detalhamento de Score:** Para cada item avaliado nas dimensões, detalhe sucintamente o que o levou a atribuir aquele score específico (3, 2, 1, 0, -1).
+
+3.  **Uso das Heurísticas:** Utilize conceitos das heurísticas **INVEST** (Independent, Negotiable, Valuable, Estimable, Small, Testable) para a avaliação da User Story e **PRICES** (Performance, Reliability, Installability, Correctness, Efficiency, Security) como um guia para identificar requisitos não funcionais relevantes e para a avaliação dos testes relacionados a esses aspectos. No entanto, sua avaliação deve seguir estritamente os itens de cada dimensão no template fornecido, usando INVEST e PRICES como base conceitual para suas justificativas e sugestões.
+
+4.  **Temas Insuficientes:** Se a User Story ou o Plano de Testes for(em) insuficiente(s) em algum aspecto avaliado, seja permissivo e propositivo. Identifique os pontos ausentes ou incompletos e sugira de forma concisa e objetiva o que é necessário para completá-los, evitando redundâncias desnecessárias (ex: "Sugiro adicionar testes para cobrir os cenários de segurança de autenticação de usuários" ou "É necessário detalhar os testes de regressão para a funcionalidade X").
+
+5.  **Avaliação Contextual:** Avalie cada ponto no contexto da User Story E do Plano de Testes fornecidos. Evite avaliações redundantes se a informação já estiver implícita ou claramente coberta por outro aspecto ou se já houver feedback no Test Plan.
+
+6.  **Veredito Final:** Ao final da avaliação, baseando-se nos scores e nas suas observações, mencione um dos seguintes vereditos:
+    *  "aprovado por inteligencia artifical **(se o score for > 60)**" 
+    *  "aprova sem ajustes" 
+    *  "aprova com ajustes" 
+    *  "reprova"
+
+7.  **Formato de Saída:** Sua resposta deve seguir EXATAMENTE a template HTML fornecida abaixo, preenchendo todos os campos, incluindo os scores para cada item, os scores totais por dimensão, e as justificativas detalhadas. Calcule os scores corretamente para cada dimensão e o score total final. **Ignore as dimensões 4 e 5, deixando seus scores totais em 0 e não as contabilizando no cálculo da 'Pontuação máx. possível (PMP)' nem no 'Score Total Obtido (SO Total)'**.
+
+```html
+# Escala
+ * [ 3] - Superou, Não impactou.
+ * [ 2] - Atende, Não impactou.
+ * [ 1] - Atende parcialmente, Parcialmente impactou.
+ * [ 0] - Não se aplica.
+ * [-1] - Não atende, Impactou severamente.
+
+# DIMENSÃO 1: [score=0] <br> QUALIDADE DA USER STORY (US)
+## 1.1. Clareza e Especificação
+    * [ ] 1.1. A US segue o padrão "Como [ator], quero [objetivo], para que [valor]"?
+    * [ ] 1.1. O objetivo e o valor da US estão claros?
+    * [ ] 1.1. Ha critérios de aceite explícitos?
+    * [ ] 1.1. Os critérios de aceite têm nexo com a história?
+    * [ ] 1.1. Critérios quantificáveis/testáveis?
+    * [ ] 1.1. Há menção a riscos relacionados à US?
+    * [0] 1.1. A US sofreu alterações durante o desenvolvimento ou após os testes que podem ter impactado o produto?
+
+# DIMENSÃO 2: [score=0] <br> ESTRATÉGIA E COBERTURA DE TESTES
+	* Número de cenários criados:
+## 2.1. Planejamento e Escopo dos Testes
+## 2.2. Aplicação de Técnicas de Teste
+## 2.3. Priorização
+    * [ ] 2.1. Pelo menos 1 cenário por ponto de teste definido pelos critérios de aceite?
+    * [ ] 2.1. Todos os critérios de aceite foram cobertos por casos de teste?
+    * [ ] 2.2. Foram aplicadas técnicas de teste formais (Ex: Particionamento de Equivalência, Valor Limite)?
+    * [ ] 2.2. Testes exploratórios foram planejados e executados de forma estruturada?
+    * [ ] 2.3. Testes criados com definição de prioridade (ex: smoke, critical path, etc.)?
+
+# DIMENSÃO 3: [score=0] <br> TESTES DE REGRESSÃO E NÃO FUNCIONAIS
+## 3.1. Regressão 
+## 3.2. Não Funcionais 
+    * [ ] 3.1. Identificada a necessidade de regressão devido à alteração de comportamento?
+    * [ ] 3.1. A documentação e/ou especificação foi atualizada após a implementação/correção?
+    * [ ] 3.2. A performance pode ter sido afetada pela implementação? (Se sim, foi avaliada?)
+    * [ ] 3.2. A cobertura prevê multibrowser/multidispositivo (Chromium based vs Outros, Android ou iOS)?
+
+# DIMENSÃO 4: [score=0] <br> AUTOMAÇÃO DE TESTES
+## 4.1. Estratégia e Relevância
+## 4.2. Qualidade e Manutenibilidade do Script: 
+## 4.3. Integração e Execução
+    * [ ] 4.1. A seleção de cenários para automação foi apropriada (valor, ROI)?
+    * [ ] 4.1. O script automatizado cobre o critério de aceite/funcionalidade de forma eficaz?
+    * [ ] 4.2. O script é legível, comentado e segue padrões?
+    * [ ] 4.2. O script é robusto a pequenas alterações na UI (uso de seletores eficientes)?
+    * [ ] 4.3. O script foi integrado ao pipeline de CI/CD (se existente)?
+    * [ ] 4.3. A execução do script é estável e os resultados são confiáveis?
+
+# DIMENSÃO 5: [score=0] <br> QUALIDADE DA EXECUÇÃO E DOCUMENTAÇÃO DE TESTES
+## 5.1. Casos de Teste
+## 5.2. Evidências e Defeitos
+    * [ ] 5.1. Os casos de teste são claros, concisos e reprodutíveis?
+    * [ ] 5.1. As pré-condições, passos e resultados esperados estão bem definidos?
+    * [ ] 5.2. As evidências de teste são adequadas e de fácil verificação?
+    * [ ] 5.2. Defeitos são reportados com clareza e informações suficientes para análise? (Passos, resultado esperado vs. obtido, severidade, prioridade)
+
+# FEEDBACK GERAL
+## Dados da Avaliação
+* (PMP) Pontuação máx. possível: 48
+* ∑(SO) Score obtido Por SubDimensão: 
+
+## Score total (eficácia)
+= ([Score Total Obtido] / 48) * 100 %

@@ -1,0 +1,79 @@
+Lista de features------->
+Favoritos no Pix:           transfer.select_key_type_v2
+msg de Duplicidade no Pix:  hackathon_2025_07.pagamentos.duplicate_pix
+bloqueio e 15 mil Pix:      pagamentos.pix_15k_limit_validation
+-------------------------------------------------------------------------
+
+
+
+LEMBRETES IMPORTANTES
+
+Retirar teste de qa que o flavio pediu
+
+adicionar flag de pix favoritos em Dev que nao tem no bff    transfer.select_key_type_v2
+
+Saldo em conta DEV faltando falhando automação
+
+DUPLICIDADE de pix AFETARÁ AS AUTOMAÇÕES!!! ver como vai ficar as flags e correção da automação ### IMPORTANTE TENHO QUE LEVANTAR ESSE PONTO PRO PIAZZA
+
+BUG EM PROD DE NAVEGAÇÃO DA TELA ATRELADA A FLAG DE FAVORITOS PIX -- QUAL SERÁ A PROCEDÊNCIA?
+
+
+
+
+
+BLOCK 15 MIL --->
+Outros fluxos de transações estão desprotegidos de msgs de erro de limite  ### FICOU PRA SER FEITO EM OUTRAS USs
+
+
+
+
+DUPLICIDADE PIX----->
+
+agendamento com ambiguidade de interpretação na duplicidade de pix como reproduzir  ### FICOU PRA SER FEITO EM OUTRAS USs
+
+Pix por copia e cola não exibindo modal de tratativa de duplicidade  ### FICOU PRA SER FEITO EM OUTRAS USs
+
+Pix por agencia e conta não exibindo modal de tratativa de duplicidade  ### FICOU PRA SER FEITO EM OUTRAS USs
+
+DUPLICIDADE AFETARÁ AS AUTOMAÇÕES!!! ver como vai ficar as flags e correção da automação ### IMPORTANTE TENHO QUE LEVANTAR ESSE PONTO PRO PIAZZA
+
+
+
+
+
+
+
+PIX COPIA E COLA ------->
+BOtão de "pix copia e cola" na área Pix está direcionando a tela de Pix errada (tela de pix normal)
+
+Botão lateral de "Pix copia e cola" no IBK empresa está direcionando tela com proporções erradas 
+
+
+
+
+Geração de boleto de depósito -->
+ver se em prod funciona o pagamento do boleto de deposito
+
+ver se em prod funciona o pagamento pelo Código QR do boleto
+
+
+
+
+
+
+
+
+
+testes pra serem feitos em prod- 
+pagamento de boleto (SEM DESCONTO, COM DESCONTO DE VALOR, COM DESCONTO PERCENTUAL E VIA QR CODE)
+
+
+
+
+
+
+
+
+
+

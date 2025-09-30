@@ -1,0 +1,40 @@
+
+
+
+boletos DEV clecoin: https://developers.celcoin.com.br/page/tabela-de-massa-de-teste-para-pagamentos-de-ficha-de-compensa%C3%A7%C3%A3o
+
+
+ONVIO DEV> https://qa01.onvio.com.br/login
+ONVIO QA> https://sat01.onvio.com.br/login
+ONVIO PROD> https://prod01.onvio.com.br/login
+
+SGD DEV> https://sgd-demo-bm.dominiosistemas.com.br
+SGD QA> https://sgd-qed-bm.dominiosistemas.com.br
+SGD PROD> https://sgd-prod-bm.dominiosistemas.com.br
+
+
+IBK NOVO ESCRITORIO ACCOUNTANT> https://dominioescritorio.dev01.fintech.thomsonreuters.com/login
+
+IBK NOVO EMPRESA CLIENT> https://dominioempresa.dev01.fintech.thomsonreuters.com/login
+
+
+
+USUARIO BFF---------------------------
+dev@thomsonreuters.com
+dev12345
+
+
+
+
+USUARIOS DO SGD:-----------------------
+vendedor.usi
+senha
+ 
+fabiane
+senha
+ 
+wendel
+senha
+---------------------------------------
+
+
