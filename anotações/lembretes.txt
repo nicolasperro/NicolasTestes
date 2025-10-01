@@ -69,6 +69,11 @@ testes pra serem feitos em prod-
 pagamento de boleto (SEM DESCONTO, COM DESCONTO DE VALOR, COM DESCONTO PERCENTUAL E VIA QR CODE)
 
 
+Bugs relatados:
+1- (Caceres trouxe) agendamento/transação imediata de operadores quando é pagamento de pix copia e cola exibindo titulo da tela errado
+2- (david) campo de telefone no fluxo de pix - ao colar com +55 o campo não trata a formatação
+3- (david) Mudança de tamanho dos componentes após loading no fluxo de transação Pix
+4- (Nicolas) Botão na tela vazia do menu de A RECEBER não direcionando para a tela de geração de boleto de cobrança
 
 
 

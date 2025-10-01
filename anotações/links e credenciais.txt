@@ -38,3 +38,18 @@ senha
 ---------------------------------------
 
 
+
+
+Acesso Banco de Dados
+https://pg.qa01.fintech.thomsonreuters.com/
+Usuário: pguser@tr.com
+Senha: Je5QUnNa8F8BcR-+
+ 
+ 
+https://pg.dev01.fintech.thomsonreuters.com/browser/
+login: pguser@tr.com
+password: 5Jv04?xGA;w:
+password2: Jp577TRGmu\D
+ 
+
+ 
